@@ -100,17 +100,17 @@ function getPokeImages(allPokedex) {
   if (pokeNumber < 10) {
     var pokeNumber = `00${pokeNumber}`;
     pokeImages.innerHTML = `<img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/${pokeNumber}.png">`;
-    pokePlatform.innerHTML = `<img src="/images/platform.png" />`;
+    pokePlatform.innerHTML = `<img src="./images/platform.png" />`;
   }
 
   if (pokeNumber < 100 && pokeNumber > 9) {
     var pokeNumber = `0${pokeNumber}`;
     pokeImages.innerHTML = `<img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/${pokeNumber}.png">`;
-    pokePlatform.innerHTML = `<img src="/images/platform.png" />`;
+    pokePlatform.innerHTML = `<img src="./images/platform.png" />`;
   }
 
   pokeImages.innerHTML = `<img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/${pokeNumber}.png">`;
-  pokePlatform.innerHTML = `<img src="/images/platform.png" />`;
+  pokePlatform.innerHTML = `<img src="./images/platform.png" />`;
 }
 
 function pokemonNotFound() {
@@ -118,8 +118,8 @@ function pokemonNotFound() {
   pokeTypeTwo.removeAttribute("class");
   pokeTypeOne.innerHTML = "";
   pokeTypeTwo.innerHTML = "";
-  pokeImages.innerHTML = '<img src="/images/questionmark.png" />';
-  pokePlatform.innerHTML = `<img src="/images/platform.png" />`;
+  pokeImages.innerHTML = '<img src="./images/questionmark.png" />';
+  pokePlatform.innerHTML = `<img src="./images/platform.png" />`;
   pokeName.innerHTML = "Name: ---";
   pokeWeight.innerHTML = "Weight: ---";
 }
